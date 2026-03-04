@@ -61,6 +61,10 @@ h3 {
   line-height: 1.2;
 }
 
+h1 {
+  font-size: clamp(2rem, 4.6vw, 3rem);
+}
+
 a {
   color: var(--accent);
   text-underline-offset: 0.18em;
@@ -168,14 +172,12 @@ button:focus-visible {
   padding: clamp(2.6rem, 3vw, 4.2rem) 0;
 }
 
-.section-muted {
-  background: linear-gradient(180deg, rgba(240, 240, 235, 0.7), rgba(240, 240, 235, 0.45));
-  border-top: 1px solid rgba(216, 219, 222, 0.55);
-  border-bottom: 1px solid rgba(216, 219, 222, 0.55);
+.page-content {
+  max-width: 74ch;
 }
 
-.hero {
-  padding-top: clamp(3.4rem, 7vw, 6rem);
+.page-header {
+  margin-bottom: var(--space-4);
 }
 
 .eyebrow {
@@ -246,15 +248,6 @@ button:focus-visible {
   background: #eef0f1;
 }
 
-.highlights {
-  padding-left: 1.2rem;
-  margin: 0;
-}
-
-.highlights li {
-  margin-bottom: 0.62rem;
-}
-
 .projects-grid {
   display: grid;
   gap: var(--space-4);
@@ -272,13 +265,22 @@ button:focus-visible {
   margin-bottom: 0.6rem;
 }
 
-.project-card ul {
-  margin: 0.75rem 0;
-  padding-left: 1.15rem;
+.meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin: 0.5rem 0 1rem;
 }
 
-.project-card li {
-  margin-bottom: 0.45rem;
+.meta-pill {
+  display: inline-block;
+  border: 1px solid var(--border);
+  background: #f3f4f6;
+  color: #21485f;
+  padding: 0.12rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.84rem;
+  text-decoration: none;
 }
 
 .tags {
@@ -295,13 +297,14 @@ button:focus-visible {
   margin-bottom: 0;
 }
 
-.contact-list {
-  margin: 0;
-  padding-left: 1rem;
+.project-detail,
+.writing-detail {
+  max-width: 78ch;
 }
 
-.contact-list li {
-  margin-bottom: 0.5rem;
+.page-content ul,
+.page-content ol {
+  padding-left: 1.2rem;
 }
 
 .site-footer {
@@ -312,7 +315,7 @@ button:focus-visible {
 
 .footer-layout {
   display: grid;
-  gap: 0.15rem;
+  gap: 0.2rem;
 }
 
 .footer-links {

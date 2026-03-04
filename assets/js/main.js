@@ -1,8 +1,7 @@
 ﻿(function () {
   const navToggle = document.querySelector('.nav-toggle');
   const navLinksContainer = document.querySelector('.nav-links');
-  const navLinks = Array.from(document.querySelectorAll('.nav-links a[data-section]'));
-  const sections = Array.from(document.querySelectorAll('main section[id], header[id]'));
+  const navLinks = Array.from(document.querySelectorAll('.nav-links a[data-route]'));
   const yearEl = document.getElementById('year');
 
   if (yearEl) {
@@ -23,49 +22,19 @@
     });
   }
 
-  function setActive(sectionId) {
-    navLinks.forEach(function (link) {
-      const isMatch = link.dataset.section === sectionId;
-      link.classList.toggle('active', isMatch);
-      if (isMatch) {
-        link.setAttribute('aria-current', 'page');
-      } else {
-        link.removeAttribute('aria-current');
-      }
-    });
-  }
+  const pathname = window.location.pathname.replace(/index\.html$/, '');
 
-  if ('IntersectionObserver' in window && sections.length > 0) {
-    const observer = new IntersectionObserver(
-      function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            setActive(entry.target.id);
-          }
-        });
-      },
-      {
-        rootMargin: '-35% 0px -45% 0px',
-        threshold: 0.01
-      }
-    );
+  navLinks.forEach(function (link) {
+    const route = link.getAttribute('data-route');
+    const normalized = pathname.endsWith('/') ? pathname : pathname + '/';
+    const isRouteMatch = normalized === route || normalized.startsWith(route);
 
-    sections.forEach(function (section) {
-      observer.observe(section);
-    });
-  } else {
-    const onScroll = function () {
-      let currentSection = 'home';
-      const offset = window.scrollY + 140;
-      sections.forEach(function (section) {
-        if (section.offsetTop <= offset) {
-          currentSection = section.id;
-        }
-      });
-      setActive(currentSection);
-    };
-
-    window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();
-  }
+    if (isRouteMatch) {
+      link.classList.add('active');
+      link.setAttribute('aria-current', 'page');
+    } else {
+      link.classList.remove('active');
+      link.removeAttribute('aria-current');
+    }
+  });
 })();

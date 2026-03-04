@@ -1,0 +1,9 @@
+﻿<article class="project-card">
+  <h3><a href="{{ include.post.url | relative_url }}">{{ include.post.title }}</a></h3>
+  <p>{{ include.post.excerpt }}</p>
+  <p class="meta-row">
+    <span class="meta-pill">{{ include.post.date | date: "%b %d, %Y" }}</span>
+    {% if include.post.reading_time %}<span class="meta-pill">{{ include.post.reading_time }} min read</span>{% endif %}
+  </p>
+  <p class="project-links"><a href="{{ include.post.url | relative_url }}">Read Essay</a></p>
+</article>
