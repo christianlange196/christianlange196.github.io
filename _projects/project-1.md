@@ -1,5 +1,5 @@
 ﻿---
-layout: project
+layout: project.html
 title: Workflow Automation Platform
 slug: workflow-automation-platform
 excerpt: Automated recurring operations with reusable pipelines and audit-ready controls.
@@ -28,3 +28,4 @@ Strong validation and observability reduce long-term maintenance overhead.
 
 ## Next Steps
 Add richer self-service workflow templates and role-based policy controls.
+

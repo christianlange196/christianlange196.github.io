@@ -1,5 +1,5 @@
 ﻿---
-layout: project
+layout: project.html
 title: Analytics Dashboard
 slug: analytics-dashboard
 excerpt: Consolidated KPI reporting with near real-time operational visibility.
@@ -28,3 +28,4 @@ Data quality contracts matter as much as dashboard design.
 
 ## Next Steps
 Add anomaly alerts and role-specific dashboard presets.
+

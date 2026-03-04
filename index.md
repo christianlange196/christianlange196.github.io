@@ -1,5 +1,5 @@
 ﻿---
-layout: default
+layout: default.html
 title: Home
 description: Concise professional profile with pathways to projects, writing, resume, and contact.
 permalink: /
@@ -10,11 +10,11 @@ permalink: /
   <p class="lead">Engineer, builder, and writer documenting practical software work and broader technical interests.</p>
   <p class="lead secondary">Use this site to explore project deep-dives, long-form essays, and core professional information.</p>
 
-  <p class="button-row">
-    <a class="btn btn-primary" href="{{ '/projects/' | relative_url }}">Explore Projects</a>
-    <a class="btn btn-secondary" href="{{ '/writing/' | relative_url }}">Read Writing</a>
-    <a class="btn btn-tertiary" href="{{ '/resume/' | relative_url }}">Resume & CV</a>
-  </p>
+<p class="button-row">
+    <a class="btn btn-primary" href="/projects/">Explore Projects</a>
+    <a class="btn btn-secondary" href="/writing/">Read Writing</a>
+    <a class="btn btn-tertiary" href="/resume/">Resume & CV</a>
+</p>
 
   <section>
     <h2>What You Will Find</h2>
@@ -34,3 +34,4 @@ permalink: /
     </div>
   </section>
 </section>
+

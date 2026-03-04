@@ -1,10 +1,10 @@
 ﻿<article class="project-card">
-  <h3><a href="{{ include.project.url | relative_url }}">{{ include.project.title }}</a></h3>
-  <p>{{ include.project.excerpt }}</p>
+  <h3><a href="{{ project.url }}">{{ project.data.title }}</a></h3>
+  <p>{{ project.data.excerpt }}</p>
   <p class="tags">
-    {% for item in include.project.tech %}
+    {% for item in project.data.tech %}
     <span class="meta-pill">{{ item }}</span>
     {% endfor %}
   </p>
-  <p class="project-links"><a href="{{ include.project.url | relative_url }}">Read Project</a></p>
+  <p class="project-links"><a href="{{ project.url }}">Read Project</a></p>
 </article>

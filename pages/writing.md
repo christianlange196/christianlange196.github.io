@@ -1,12 +1,12 @@
 ﻿---
-layout: page
+layout: page.html
 title: Writing
 description: Scientific and philosophical essays with long-form analysis.
 permalink: /writing/
 ---
 <div class="projects-grid">
-  {% assign sorted_writing = site.writing | sort: "date" | reverse %}
-  {% for post in sorted_writing %}
-    {% include card-writing.html post=post %}
+  {% for entry in collections.writing | reverse %}
+    {% render "card-writing.html", entry: entry %}
   {% endfor %}
 </div>
+

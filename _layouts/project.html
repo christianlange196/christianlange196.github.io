@@ -1,23 +1,23 @@
 ﻿---
-layout: default
+layout: default.html
 ---
 <article class="page-content project-detail">
   <header class="page-header">
     <p class="eyebrow">Project</p>
-    <h1>{{ page.title }}</h1>
-    {% if page.excerpt %}<p class="lead">{{ page.excerpt }}</p>{% endif %}
+    <h1>{{ title }}</h1>
+    {% if excerpt %}<p class="lead">{{ excerpt }}</p>{% endif %}
     <p class="meta-row">
-      <span class="meta-pill">Status: {{ page.status | capitalize }}</span>
-      {% for item in page.tech %}
+      <span class="meta-pill">Status: {{ status | capitalize }}</span>
+      {% for item in tech %}
       <span class="meta-pill">{{ item }}</span>
       {% endfor %}
     </p>
   </header>
 
-  {% if page.github_url or page.live_url %}
+  {% if github_url or live_url %}
   <p class="button-row">
-    {% if page.github_url %}<a class="btn btn-secondary" href="{{ page.github_url }}" target="_blank" rel="noopener noreferrer">GitHub</a>{% endif %}
-    {% if page.live_url %}<a class="btn btn-primary" href="{{ page.live_url }}" target="_blank" rel="noopener noreferrer">Live / Case Study</a>{% endif %}
+    {% if github_url %}<a class="btn btn-secondary" href="{{ github_url }}" target="_blank" rel="noopener noreferrer">GitHub</a>{% endif %}
+    {% if live_url %}<a class="btn btn-primary" href="{{ live_url }}" target="_blank" rel="noopener noreferrer">Live / Case Study</a>{% endif %}
   </p>
   {% endif %}
 
@@ -26,9 +26,10 @@ layout: default
   <section>
     <h2>Tags</h2>
     <p>
-      {% for tag in page.tags %}
-      {% include tag-pill.html tag=tag %}
+      {% for tag in tags %}
+      {% render "tag-pill.html", tag: tag %}
       {% endfor %}
     </p>
   </section>
 </article>
+

@@ -1,9 +1,9 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-  {% include head.html %}
+  {% render "head.html" %}
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
-    {% include header.html %}
+    {% render "header.html" %}
 
     <main id="main-content" class="section">
       <div class="container">
@@ -11,7 +11,7 @@
       </div>
     </main>
 
-    {% include footer.html %}
-    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+    {% render "footer.html" %}
+    <script src="/assets/js/main.js"></script>
   </body>
 </html>

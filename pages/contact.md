@@ -1,5 +1,5 @@
 ﻿---
-layout: page
+layout: page.html
 title: Contact
 description: Professional contact channels.
 permalink: /contact/
@@ -10,3 +10,4 @@ permalink: /contact/
   <li>LinkedIn: <a href="https://www.linkedin.com/in/your-linkedin-handle" target="_blank" rel="noopener noreferrer">linkedin.com/in/your-linkedin-handle</a></li>
   <li>GitHub: <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">github.com/yourusername</a></li>
 </ul>
+

@@ -1,5 +1,5 @@
 ﻿---
-layout: post
+layout: post.html
 title: Practical Limits of Optimization-First Thinking
 slug: practical-limits-of-optimization-first-thinking
 excerpt: Why local optimization can undermine global system outcomes.
@@ -21,3 +21,4 @@ A practical approach is to optimize within guardrails: monitor tradeoffs, preser
 
 ## Open Questions
 How can teams encode resilience metrics without creating perverse incentives?
+

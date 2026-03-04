@@ -1,5 +1,5 @@
 ﻿---
-layout: project
+layout: project.html
 title: Internal Developer Toolkit
 slug: internal-developer-toolkit
 excerpt: Standardized local setup and delivery quality with shared tooling.
@@ -28,3 +28,4 @@ Opinionated defaults speed teams when paired with clear escape hatches.
 
 ## Next Steps
 Expand templates for data and infrastructure-heavy services.
+

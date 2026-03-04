@@ -1,5 +1,5 @@
 ﻿---
-layout: page
+layout: page.html
 title: Hardware
 description: Hardware projects and build logs.
 permalink: /hardware/
@@ -11,3 +11,4 @@ Planned format:
 - Individual build pages under `/hardware/<slug>/`
 - Photos, bill of materials, diagrams, and lessons learned
 - Tags for domains such as embedded systems, audio, and instrumentation
+

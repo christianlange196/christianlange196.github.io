@@ -1,5 +1,5 @@
 ﻿---
-layout: post
+layout: post.html
 title: Scientific Humility in Model-Driven Decision Making
 slug: scientific-humility-in-model-driven-decision-making
 excerpt: Building better decisions by pairing quantitative models with uncertainty-aware reasoning.
@@ -21,3 +21,4 @@ Scientific humility is operational: track uncertainty, test alternatives, and re
 
 ## Open Questions
 What lightweight practices best improve uncertainty literacy in software teams?
+

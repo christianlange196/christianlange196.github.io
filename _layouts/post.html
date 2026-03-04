@@ -1,23 +1,24 @@
 ﻿---
-layout: default
+layout: default.html
 ---
 <article class="page-content writing-detail">
   <header class="page-header">
     <p class="eyebrow">Writing</p>
-    <h1>{{ page.title }}</h1>
+    <h1>{{ title }}</h1>
     <p class="meta-row">
       <span class="meta-pill">{{ page.date | date: "%B %d, %Y" }}</span>
-      {% if page.reading_time %}<span class="meta-pill">{{ page.reading_time }} min read</span>{% endif %}
+      {% if reading_time %}<span class="meta-pill">{{ reading_time }} min read</span>{% endif %}
     </p>
-    {% if page.excerpt %}<p class="lead">{{ page.excerpt }}</p>{% endif %}
+    {% if excerpt %}<p class="lead">{{ excerpt }}</p>{% endif %}
   </header>
   {{ content }}
   <section>
     <h2>Tags</h2>
     <p>
-      {% for tag in page.tags %}
-      {% include tag-pill.html tag=tag %}
+      {% for tag in tags %}
+      {% render "tag-pill.html", tag: tag %}
       {% endfor %}
     </p>
   </section>
 </article>
+
