@@ -1,0 +1,19 @@
+﻿title: "Your Name"
+description: "Professional portfolio, project documentation, and long-form writing."
+url: "https://christianlange196.github.io"
+baseurl: ""
+markdown: kramdown
+permalink: pretty
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+  writing:
+    output: true
+    permalink: /writing/:name/
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page
+      image: /assets/img/site-preview.png
