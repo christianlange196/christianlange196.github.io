@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   --bg: #f7f7f4;
   --surface: #ffffff;
   --surface-muted: #f0f0eb;
@@ -251,6 +251,12 @@ button:focus-visible {
 .projects-grid {
   display: grid;
   gap: var(--space-4);
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  align-items: stretch;
+}
+
+.page-projects {
+  max-width: none;
 }
 
 .project-card {
@@ -344,10 +350,6 @@ button:focus-visible {
     gap: 0.2rem;
     padding: 0;
   }
-
-  .projects-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
 }
 
 @media (max-width: 47.99rem) {
@@ -372,3 +374,5 @@ button:focus-visible {
     transform: translateY(0);
   }
 }
+
+

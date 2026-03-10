@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post.html
 title: Scientific Humility in Model-Driven Decision Making
 slug: scientific-humility-in-model-driven-decision-making

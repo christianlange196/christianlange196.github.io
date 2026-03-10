@@ -1,4 +1,4 @@
-﻿---
+---
 layout: page.html
 title: Writing
 description: Writing section coming soon.

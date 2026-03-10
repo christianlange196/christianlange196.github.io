@@ -1,4 +1,4 @@
-﻿---
+---
 layout: page.html
 title: Music
 description: Music section coming soon.

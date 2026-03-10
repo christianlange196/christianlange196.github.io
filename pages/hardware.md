@@ -1,4 +1,4 @@
-﻿---
+---
 layout: page.html
 title: Hardware
 description: Hardware projects and build logs.

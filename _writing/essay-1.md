@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post.html
 title: Practical Limits of Optimization-First Thinking
 slug: practical-limits-of-optimization-first-thinking
