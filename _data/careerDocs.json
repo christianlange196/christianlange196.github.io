@@ -1,0 +1,246 @@
+{
+    "identity":  {
+                     "name":  "Christian M Lange",
+                     "targetRole":  "",
+                     "location":  "West Lafayette, IN",
+                     "email":  "christianlange196@gmail.com",
+                     "linkedin":  "https://www.linkedin.com/in/christian-l-063170185/",
+                     "scholar":  "https://scholar.google.com/citations?user=ucO89aIAAAAJ\u0026hl=en",
+                     "website":  "https://christianlange196.github.io",
+                     "researchGroup":  "https://hoodlabpurdue.com",
+                     "defense":  "https://youtu.be/RHo4VavuWf8?si=qckCNUw4NRXdyonl",
+                     "phone":  "(765) 476-3357"
+                 },
+    "summary":  {
+                    "resume":  [
+                                   "Experimental physicist specializing in quantum optics and nanophotonics, with a strong track record of rapidly building end-to-end systems. Led a research subgroup from an empty optical table to a Nature Physics publication in 2.5 years. Deep expertise in nanofabrication, tabletop optics, programming and automation, quantum theory, and materials synthesis."
+                               ],
+                    "cv":  [
+                               "I build precision optical and nanophotonic systems that combine instrumentation, software automation, and quantitative analysis.",
+                               "My work has focused on molecule-based quantum photonics: designing cryogenic confocal platforms, developing automated control and data pipelines, fabricating nanophotonic devices, and creating materials synthesis workflows for photonic integration.",
+                               "Across graduate and postdoctoral projects, I have delivered high-impact experimental results by rapidly standing up new systems, iterating through difficult engineering constraints, and translating ambiguous research goals into auditable technical execution."
+                           ]
+                },
+    "technicalSkills":  [
+                            {
+                                "category":  "Optics and Photonics",
+                                "items":  [
+                                              "Cryogenic confocal microscopy",
+                                              "Single-molecule spectroscopy (PLE, linewidth, saturation, lifetime)",
+                                              "Photon correlation Fourier spectroscopy (PCFS)",
+                                              "Hanbury Brown-Twiss and time-domain photon counting",
+                                              "Laser and cavity alignment, polarization suppression (\u003e70 dB)",
+                                              "Fiber-coupled and free-space optical systems"
+                                          ]
+                            },
+                            {
+                                "category":  "Automation, Software, and Control",
+                                "items":  [
+                                              "Python experiment automation and instrument orchestration",
+                                              "Custom device drivers (TCP/IP, NI-DAQ, serial, hardware APIs)",
+                                              "Long-running unattended acquisition with full audit trails",
+                                              "Data reduction and model-fitting workflows for large datasets",
+                                              "QuTiP and Monte Carlo simulation for collective-emitter modeling",
+                                              "Embedded tooling with ESP32, Arduino, and Raspberry Pi"
+                                          ]
+                            },
+                            {
+                                "category":  "Nanophotonics and Fabrication",
+                                "items":  [
+                                              "Nanophotonic cavity and grating coupler design",
+                                              "E-beam lithography, RIE, thin-film process flow",
+                                              "SEM metrology and process iteration",
+                                              "Tidy3D, Lumerical, MEEP/MPB, KLayout",
+                                              "COMSOL electromagnetics"
+                                          ]
+                            },
+                            {
+                                "category":  "Materials and Micromanipulation",
+                                "items":  [
+                                              "Vapor-phase growth of DBT:anthracene nanosheets",
+                                              "Two-stage tube-furnace protocol development",
+                                              "Micropositioner-based crystal transfer and placement",
+                                              "Nanophotonic integration of organic emitter crystals"
+                                          ]
+                            }
+                        ],
+    "resumeSkillLines":  [
+                             "Optics - Cryogenic confocal microscopy, fiber optics, laser and cavity alignment",
+                             "Nanofabrication - e-beam lithography, optical lithography, reactive ion etching",
+                             "Programming and automation - Python, TCP/IP, ESP32, Arduino, Raspberry Pi",
+                             "Simulation - Photonics (Tidy3D, COMSOL, Lumerical); quantum optics (QuTiP)",
+                             "Materials - Vapor phase and liquid phase crystal growth"
+                         ],
+    "selectedProjects":  [
+                             {
+                                 "title":  "Automated cryogenic quantum optics experiment",
+                                 "period":  "2021-2023",
+                                 "focus":  [
+                                               "Optics",
+                                               "Automation",
+                                               "Quantum simulation"
+                                           ],
+                                 "summary":  "Built a new quantum optics experiment from scratch and delivered a first-author Nature Physics result in two years.",
+                                 "highlights":  [
+                                                    "Designed and constructed a cryogenic confocal microscope with APD, camera, Ti:Saph laser with frequency scanning, beam steering, fast laser switching (800 picoseconds).",
+                                                    "Built automated control software to search unattended through thousands of quantum emitters over several days for signatures of pairwise interactions, resulting in the observation of superradiance in 10 pairs of molecules."
+                                                ],
+                                 "link":  {
+                                              "label":  "Lange et al Nature Physics",
+                                              "url":  "https://www.nature.com/articles/s41567-024-02404-4"
+                                          }
+                             },
+                             {
+                                 "title":  "Molecule-nanophotonic integration",
+                                 "period":  "2023-2025",
+                                 "focus":  [
+                                               "Nanofabrication",
+                                               "Nanophotonics",
+                                               "Micromanipulation"
+                                           ],
+                                 "summary":  "Led an engineering effort to integrate individual molecules with planar nanophotonic resonators.",
+                                 "highlights":  [
+                                                    "Designed and fabricated silicon nitride cavities with Q = 10,000 and mode volumes of (2.5 lambda/n)^3",
+                                                    "Developed process to microposition crystals doped with quantum emitters on top of planar nanophotonics, achieving nanophotonic-molecule coupling with a cooperativity of C=0.5."
+                                                ],
+                                 "link":  {
+                                              "label":  "Lange, et al. (ACS Nano, accepted)",
+                                              "url":  "https://arxiv.org/abs/2506.01917"
+                                          },
+                                 "patentNote":  "Patent: Photon Emission with Organic Molecules and Nanophotonics. U.S. Provisional Patent Application 63/814,571 (2025), Purdue Research Foundation Ref: 2025-HOOD-71146-01"
+                             },
+                             {
+                                 "title":  "Extreme aspect ratio crystals doped with quantum emitters",
+                                 "period":  "2025-2026",
+                                 "focus":  [
+                                               "Materials Synthesis",
+                                               "Process Engineering"
+                                           ],
+                                 "summary":  "Developed a protocol to grow extreme aspect ratio crystals doped with quantum emitters and compatible with nanophotonic integration.",
+                                 "highlights":  [
+                                                    "Developed a protocol to grow extreme aspect ratio crystals doped with quantum emitters and compatible with nanophotonic integration.",
+                                                    "Aspect ratio: 30 microns wide, 200 nanometers thick; Surface roughness: \u003c0.8 nanometers RMS; Doping concentration: \u003e1000 / cubic micron; Quantum emitter coherence: T2/(2 T1) = 88%.",
+                                                    "The protocol is simple, high-yield, highly controllable, and is already being adopted by leading groups worldwide."
+                                                ],
+                                 "link":  {
+                                              "label":  "Keni and Lange et al. (under review)",
+                                              "url":  "https://arxiv.org/abs/2602.18517"
+                                          }
+                             }
+                         ],
+    "researchExperience":  [
+                               {
+                                   "role":  "Postdoctoral researcher | Quantum Photonic Integrated Design Center (QuPIDC)",
+                                   "organization":  "",
+                                   "period":  "2026-present",
+                                   "bullets":  [
+                                                   "Developed photon-correlation-Fourier-spectroscopy technique to characterize quantum emitters for the center. Performed the technique on a noisy and unstable emitter (perovskite quantum dots) to demonstrate its robustness (manuscript in preparation)",
+                                                   "Led collaboration efforts between researchers in different subfields."
+                                               ],
+                                   "citation":  {
+                                                    "label":  "Daggett, Lange, et al. Nature Reviews Materials",
+                                                    "url":  "https://www.nature.com/articles/s41578-026-00893-8"
+                                                }
+                               },
+                               {
+                                   "role":  "PhD Researcher | Purdue University",
+                                   "organization":  "Thesis advisor: Jonathan Hood",
+                                   "period":  "2021-2025",
+                                   "bullets":  [
+                                                   "First grad student on a new experiment (wore many hats)",
+                                                   "Built and automated experimental platform to study cryogenic quantum emitters",
+                                                   "Developed a synthesis method for ultrahigh aspect ratio crystals doped with quantum emitters",
+                                                   "Developed platform for cryogenic molecules coupled to nanophotonic resonators"
+                                               ],
+                                   "citation":  {
+                                                    "label":  "Thesis: Quantum light-matter interactions with organic molecules",
+                                                    "url":  "https://doi.org/10.25394/PGS.30753941"
+                                                }
+                               },
+                               {
+                                   "role":  "Undergraduate Researcher | Utah State University",
+                                   "organization":  "Thesis advisor: Dr. Tsung-Cheng Shen",
+                                   "period":  "2017-2021",
+                                   "bullets":  [
+                                                   "Assisted in microfabrication of height-modulated carbon nanotube forests and logged 300+ hours in a university cleanroom.",
+                                                   "Modeled electromagnetic scattering from carbon nanotube forests using analytical and numerical methods."
+                                               ],
+                                   "citations":  [
+                                                     {
+                                                         "label":  "Lange and Shen, Carbon Trends",
+                                                         "url":  "https://doi.org/10.1016/j.cartre.2021.100070"
+                                                     },
+                                                     {
+                                                         "label":  "Thesis: The Reflection of Light from Periodic Conducting Interfaces",
+                                                         "url":  "https://doi.org/10.26076/be99-9a13"
+                                                     }
+                                                 ]
+                               }
+                           ],
+    "education":  [
+                      {
+                          "degree":  "PhD, Physics",
+                          "school":  "Purdue University",
+                          "period":  "2021-2025",
+                          "details":  "Thesis: Quantum Light-Matter Interactions with Organic Molecules | Advisor: Jonathan D. Hood"
+                      },
+                      {
+                          "degree":  "BS, Physics (Minors: Mathematics, Computer Science)",
+                          "school":  "Utah State University",
+                          "period":  "2017-2021",
+                          "details":  "Summa Cum Laude, GPA 3.99/4.00 | Thesis: Reflection of Light from Periodic Conducting Interfaces"
+                      }
+                  ],
+    "publications":  [
+                         {
+                             "authors":  "Lange; Daggett; Walther; Huang; Hood",
+                             "title":  "Superradiant and subradiant states in lifetime-limited organic molecules through laser-induced tuning",
+                             "venue":  "Nature Physics 20, 836-842",
+                             "year":  "2024",
+                             "doi":  "https://doi.org/10.1038/s41567-024-02404-4"
+                         },
+                         {
+                             "authors":  "Daggett; Lange; et al.",
+                             "title":  "Many-body entanglement in solid-state emitters",
+                             "venue":  "Nature Reviews Materials",
+                             "year":  "2026",
+                             "doi":  "https://doi.org/10.1038/s41578-026-00893-8",
+                             "note":  "Accepted"
+                         },
+                         {
+                             "authors":  "Lange; Keni; Agarwal; Daggett; Mansukhani; Kundu; Cerjan; Huang; Hood",
+                             "title":  "Cavity QED with molecular defects coupled to a photonic crystal cavity",
+                             "venue":  "arXiv",
+                             "year":  "2025",
+                             "doi":  "https://arxiv.org/abs/2506.01917",
+                             "note":  "Under review (ACS Nano)"
+                         },
+                         {
+                             "authors":  "Keni; Lange; et al.",
+                             "title":  "Vapor Phase Assembly of Molecular Emitter Crystals for Photonic Integrated Circuits",
+                             "venue":  "arXiv",
+                             "year":  "2026",
+                             "doi":  "https://arxiv.org/abs/2602.18517",
+                             "note":  "Under review (ACS Photonics)"
+                         },
+                         {
+                             "authors":  "Daggett; Lange; et al.",
+                             "title":  "Coherence in individual perovskite quantum dots",
+                             "venue":  "Manuscript in preparation",
+                             "year":  "2026",
+                             "doi":  ""
+                         },
+                         {
+                             "authors":  "Lange; Shen",
+                             "title":  "Fabrication of height-modulated carbon nanotube forests: Morphologies and prospects for broadband absorption",
+                             "venue":  "Carbon Trends 4, 100070",
+                             "year":  "2021",
+                             "doi":  "https://doi.org/10.1016/j.cartre.2021.100070"
+                         }
+                     ],
+    "patent":  {
+                   "title":  "Photon Emission with Organic Molecules and Nanophotonics",
+                   "details":  "U.S. Provisional Patent Application 63/814,571 (2025), Purdue Research Foundation Ref: 2025-HOOD-71146-01"
+               }
+}
+

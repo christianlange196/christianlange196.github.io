@@ -1,4 +1,5 @@
-﻿module.exports = function (eleventyConfig) {
+module.exports = function (eleventyConfig) {
+  eleventyConfig.ignores.add("career-docs/**");
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("resume.pdf");
   eleventyConfig.addPassthroughCopy("cv.pdf");

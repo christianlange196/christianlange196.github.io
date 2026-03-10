@@ -381,7 +381,7 @@ button:focus-visible {
 }
 
 
-@media (min-width: 80rem) {
+@media (min-width: 68rem) {
   .projects-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -408,6 +408,7 @@ button:focus-visible {
     transform: translateY(0);
   }
 }
+
 
 
 
