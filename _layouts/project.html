@@ -23,13 +23,5 @@ layout: default.html
 
   {{ content }}
 
-  <section>
-    <h2>Tags</h2>
-    <p>
-      {% for tag in tags %}
-      {% render "tag-pill.html", tag: tag %}
-      {% endfor %}
-    </p>
-  </section>
 </article>
 

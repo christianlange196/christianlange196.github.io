@@ -1,31 +1,25 @@
-﻿---
-layout: project.html
-title: Workflow Automation Platform
-slug: workflow-automation-platform
-excerpt: Automated recurring operations with reusable pipelines and audit-ready controls.
-date: 2025-11-10
-tags: [automation, operations, reliability]
-tech: [JavaScript, Node.js, PostgreSQL]
-status: complete
-github_url: https://github.com/yourusername/project-one
-live_url: https://example.com/project-one
-permalink: /projects/workflow-automation-platform/
 ---
-## Problem
-Operational tasks were repetitive, error-prone, and hard to audit.
+layout: project.html
+title: Nanobeam Cavities and Grating Couplers
+slug: nanobeam-cavities-grating-couplers
+excerpt: Designed and fabricated nanobeam cavity and grating-coupler geometries for high-Q, low-mode-volume photonic devices.
+date: 2024-11-01
+tags: [nanofabrication, nanophotonics, device-design]
+tech: [Nanofabrication, Simulation, Optical Characterization]
+status: complete
+github_url:
+live_url: https://doi.org/10.48550/arXiv.2506.01917
+permalink: /projects/nanobeam-cavities-grating-couplers/
+---
+## Scope
+Designed and fabricated multiple nanobeam cavity and grating-coupler geometries for molecule-cavity and integrated photonics experiments.
 
-## Approach
-Built modular automation pipelines with input validation, scheduling, and execution history.
+## Technical Highlights
+- Targeted cavity quality factors on the order of 10,000.
+- Engineered low mode-volume structures suitable for strong light-matter interaction studies.
+- Implemented coupler designs with approximately 20% coupling efficiency.
 
-## Build Process
-Defined shared workflow primitives, added database-backed state tracking, and implemented retry-safe handlers.
+## Outcomes
+This fabrication and design work supported follow-on cavity QED and emitter-integration experiments.
 
-## Results
-Manual workload dropped significantly and process consistency improved.
-
-## Lessons Learned
-Strong validation and observability reduce long-term maintenance overhead.
-
-## Next Steps
-Add richer self-service workflow templates and role-based policy controls.
-
+**Related publication:** "Cavity qed with molecular defects coupled to a photonic crystal cavity" (Under review, ACS Nano). DOI: [10.48550/arXiv.2506.01917](https://doi.org/10.48550/arXiv.2506.01917)

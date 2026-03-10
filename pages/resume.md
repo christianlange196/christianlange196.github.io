@@ -1,14 +1,15 @@
-﻿---
+---
 layout: page.html
 title: Resume
-description: Access and download resume and CV PDFs.
+description: This page has moved to About.
 permalink: /resume/
 ---
-## Resume and CV
-Use the resume for concise role-focused review and the CV for comprehensive background.
+<meta http-equiv="refresh" content="0; url=/about/" />
+<link rel="canonical" href="/about/" />
+
+## Moved
+Resume and CV links are now part of the About page.
 
 <p class="button-row">
-  <a class="btn btn-primary" href="/resume.pdf" target="_blank" rel="noopener noreferrer" download>Download Resume (PDF)</a>
-  <a class="btn btn-secondary" href="/cv.pdf" target="_blank" rel="noopener noreferrer" download>Download CV (PDF)</a>
+  <a class="btn btn-primary" href="/about/">Go to About</a>
 </p>
-

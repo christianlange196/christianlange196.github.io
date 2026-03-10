@@ -1,31 +1,28 @@
-﻿---
-layout: project.html
-title: Analytics Dashboard
-slug: analytics-dashboard
-excerpt: Consolidated KPI reporting with near real-time operational visibility.
-date: 2025-09-02
-tags: [analytics, dashboard, decision-support]
-tech: [TypeScript, React, REST APIs]
-status: active
-github_url: https://github.com/yourusername/project-two
-live_url: https://example.com/project-two
-permalink: /projects/analytics-dashboard/
 ---
-## Problem
-Teams lacked a single view for monitoring business and platform health.
+layout: project.html
+title: Confocal, Optics, and Experimental Control Platforms
+slug: confocal-optics-experimental-control-platforms
+excerpt: Built confocal/time-domain optics systems with integrated electronics and Python-based automation/control.
+date: 2025-02-01
+tags: [optics, microscopy, instrumentation, automation, controls]
+tech: [Confocal Microscopy, Spectroscopy, Python, Hardware Control, Embedded Systems]
+status: complete
+github_url:
+live_url:
+permalink: /projects/confocal-optics-experimental-control-platforms/
+---
+## Scope
+Built several scanning confocal microscope configurations and integrated them with custom control electronics and software automation for cryogenic and room-temperature experiments.
 
-## Approach
-Created a dashboard with focused KPI cards, trends, and drilldown paths.
+## Technical Highlights
+- Implemented multiple scan/control architectures (including galvo and motorized-stage setups).
+- Integrated a large-load motorized XY stage (20 lb payload) with sub-2 micron repeatability for precise positioning workflows.
+- Integrated time-domain measurement workflows: correlation, Fourier spectroscopy, and fluorescence lifetime.
+- Aligned and operated laser/cavity systems with strong polarization-control and extinction requirements.
+- Built Python GUIs, experiment orchestration code, and custom drivers for time taggers and optomechanical instruments.
+- Integrated low-cost embedded hardware (Arduino, Raspberry Pi, ESP32) for photon counting, telemetry, and remote lab monitoring.
 
-## Build Process
-Integrated multiple APIs, normalized data, and designed reusable visualization components.
+## Outcomes
+Delivered flexible optical platforms used for single-emitter and molecule-cavity characterization while improving repeatability for long-running measurements.
 
-## Results
-Reduced reporting overhead and improved decision turnaround time.
-
-## Lessons Learned
-Data quality contracts matter as much as dashboard design.
-
-## Next Steps
-Add anomaly alerts and role-specific dashboard presets.
-
+**Related publication:** "Superradiant and subradiant states in lifetime-limited organic molecules through laser-induced tuning," *Nature Physics* 20, 836-842 (2024). DOI: [10.1038/s41567-024-02404-4](https://doi.org/10.1038/s41567-024-02404-4)

@@ -1,31 +1,25 @@
-﻿---
-layout: project.html
-title: Internal Developer Toolkit
-slug: internal-developer-toolkit
-excerpt: Standardized local setup and delivery quality with shared tooling.
-date: 2025-06-15
-tags: [developer-experience, tooling, productivity]
-tech: [Python, CLI, CI/CD]
-status: complete
-github_url: https://github.com/yourusername/project-three
-live_url: https://example.com/project-three
-permalink: /projects/internal-developer-toolkit/
 ---
-## Problem
-Onboarding and project bootstrapping varied across teams and slowed delivery.
+layout: project.html
+title: DBT:Anthracene Nanosheet Synthesis
+slug: dbt-anthracene-nanosheet-synthesis
+excerpt: Developed growth and integration workflows for DBT:anthracene molecular emitter crystals for photonic platforms.
+date: 2024-05-01
+tags: [materials, synthesis, molecular-emitters]
+tech: [Materials Synthesis, Crystal Growth, Device Integration]
+status: complete
+github_url:
+live_url:
+permalink: /projects/dbt-anthracene-nanosheet-synthesis/
+---
+## Scope
+Developed and refined DBT:anthracene synthesis workflows for molecular emitter crystals intended for photonic integration.
 
-## Approach
-Designed a CLI toolkit with templates, environment checks, and built-in quality steps.
+## Technical Highlights
+- Implemented growth protocols supporting high-quality DBT:anthracene crystal formation.
+- Tuned processing conditions to improve emitter crystal morphology and integration compatibility.
+- Supported transfer and integration workflows aligned with photonic device experiments.
 
-## Build Process
-Implemented command modules, template scaffolding, and CI integration hooks.
+## Outcomes
+Established a repeatable materials pathway for molecular-emitter photonics studies.
 
-## Results
-Faster onboarding and more consistent engineering standards.
-
-## Lessons Learned
-Opinionated defaults speed teams when paired with clear escape hatches.
-
-## Next Steps
-Expand templates for data and infrastructure-heavy services.
-
+**Related publication:** A. D. Keni, Lange, C. M., et al., "Vapor phase assembly of molecular emitter crystals for photonic integrated circuits," Under review; submitted to *ACS Photonics*. DOI: [10.48550/arXiv.2602.18517](https://doi.org/10.48550/arXiv.2602.18517)

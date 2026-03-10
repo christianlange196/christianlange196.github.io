@@ -307,6 +307,10 @@ button:focus-visible {
   padding-left: 1.2rem;
 }
 
+.pub-list li {
+  margin-bottom: 1rem;
+}
+
 .site-footer {
   border-top: 1px solid var(--border);
   padding: var(--space-5) 0;

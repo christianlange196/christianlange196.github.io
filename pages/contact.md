@@ -1,13 +1,13 @@
-﻿---
+---
 layout: page.html
 title: Contact
-description: Professional contact channels.
+description: This page has moved to About.
 permalink: /contact/
 ---
-## Contact Channels
-<ul>
-  <li>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
-  <li>LinkedIn: <a href="https://www.linkedin.com/in/your-linkedin-handle" target="_blank" rel="noopener noreferrer">linkedin.com/in/your-linkedin-handle</a></li>
-  <li>GitHub: <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">github.com/yourusername</a></li>
-</ul>
+<meta http-equiv="refresh" content="0; url=/about/" />
+<link rel="canonical" href="/about/" />
 
+## Moved
+Contact details are now on the About page.
+
+<p class="button-row"><a class="btn btn-primary" href="/about/">Go to About</a></p>

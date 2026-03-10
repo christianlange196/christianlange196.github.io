@@ -1,12 +1,9 @@
 ﻿---
 layout: page.html
 title: Writing
-description: Scientific and philosophical essays with long-form analysis.
+description: Writing section coming soon.
 permalink: /writing/
 ---
-<div class="projects-grid">
-  {% for entry in collections.writing | reverse %}
-    {% render "card-writing.html", entry: entry %}
-  {% endfor %}
-</div>
+## Coming Soon
+Scientific and philosophical writing is coming soon.
 

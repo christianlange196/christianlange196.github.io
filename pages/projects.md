@@ -1,12 +1,13 @@
-﻿---
+---
 layout: page.html
 title: Projects
-description: Detailed project documentation and engineering case studies.
+description: Selected technical projects from optics, nanofabrication, and lab automation work.
 permalink: /projects/
 ---
-<div class="projects-grid">
-  {% for project in collections.projects | reverse %}
-    {% render "card-project.html", project: project %}
-  {% endfor %}
-</div>
+## Selected Projects
 
+<div class="projects-grid">
+{% for project in collections.projects reversed %}
+  {% render "card-project.html", project: project %}
+{% endfor %}
+</div>
