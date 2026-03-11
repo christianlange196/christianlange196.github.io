@@ -1,4 +1,4 @@
-{
+﻿{
     "identity":  {
                      "name":  "Christian M Lange",
                      "targetRole":  "",
@@ -83,10 +83,10 @@
                                  "summary":  "Built a new quantum optics experiment from scratch and delivered a first-author Nature Physics result in two years.",
                                  "highlights":  [
                                                     "Designed and constructed a cryogenic confocal microscope with APD, camera, Ti:Saph laser with frequency scanning, beam steering, fast laser switching (800 picoseconds).",
-                                                    "Built automated control software to search unattended through thousands of quantum emitters over several days for signatures of pairwise interactions, resulting in the observation of superradiance in 10 pairs of molecules."
+                                                    "Built automated control software to search unattended through quantum emitters over several days for signatures of pairwise interactions, resulting in the observation of superradiance."
                                                 ],
                                  "link":  {
-                                              "label":  "Lange et al Nature Physics",
+                                              "label":  "Publication: Lange et al. Nature Physics (2024)",
                                               "url":  "https://www.nature.com/articles/s41567-024-02404-4"
                                           }
                              },
@@ -100,11 +100,11 @@
                                            ],
                                  "summary":  "Led an engineering effort to integrate individual molecules with planar nanophotonic resonators.",
                                  "highlights":  [
-                                                    "Designed and fabricated silicon nitride cavities with Q = 10,000 and mode volumes of (2.5 lambda/n)^3",
-                                                    "Developed process to microposition crystals doped with quantum emitters on top of planar nanophotonics, achieving nanophotonic-molecule coupling with a cooperativity of C=0.5."
+                                                    "Designed and fabricated silicon nitride cavities with $Q = 10{,}000$ and mode volumes of 2.5$(\\lambda/n)^3$.",
+                                                    "Developed process to microposition crystals doped with quantum emitters on top of planar nanophotonics, achieving nanophotonic-molecule coupling with a cooperativity of $C=0.5$."
                                                 ],
                                  "link":  {
-                                              "label":  "Lange, et al. (ACS Nano, accepted)",
+                                              "label":  "Publication: Lange et al. (ACS Nano, accepted, 2025)",
                                               "url":  "https://arxiv.org/abs/2506.01917"
                                           },
                                  "patentNote":  "Patent: Photon Emission with Organic Molecules and Nanophotonics. U.S. Provisional Patent Application 63/814,571 (2025), Purdue Research Foundation Ref: 2025-HOOD-71146-01"
@@ -119,11 +119,11 @@
                                  "summary":  "Developed a protocol to grow extreme aspect ratio crystals doped with quantum emitters and compatible with nanophotonic integration.",
                                  "highlights":  [
                                                     "Developed a protocol to grow extreme aspect ratio crystals doped with quantum emitters and compatible with nanophotonic integration.",
-                                                    "Aspect ratio: 30 microns wide, 200 nanometers thick; Surface roughness: \u003c0.8 nanometers RMS; Doping concentration: \u003e1000 / cubic micron; Quantum emitter coherence: T2/(2 T1) = 88%.",
+                                                    "Aspect ratio: 30 microns wide, 200 nanometers thick; Surface roughness: $\u003c0.8$ nanometers RMS; Doping concentration: $\u003e1000\\,/\\,\\mu\\text{m}^3$; Quantum emitter coherence: $T_2/(2T_1)=88\\%$.",
                                                     "The protocol is simple, high-yield, highly controllable, and is already being adopted by leading groups worldwide."
                                                 ],
                                  "link":  {
-                                              "label":  "Keni and Lange et al. (under review)",
+                                              "label":  "Publication: Keni and Lange et al. (under review, 2026)",
                                               "url":  "https://arxiv.org/abs/2602.18517"
                                           }
                              }
@@ -134,11 +134,11 @@
                                    "organization":  "",
                                    "period":  "2026-present",
                                    "bullets":  [
-                                                   "Developed photon-correlation-Fourier-spectroscopy technique to characterize quantum emitters for the center. Performed the technique on a noisy and unstable emitter (perovskite quantum dots) to demonstrate its robustness (manuscript in preparation)",
+                                                   "Implemented a photon-correlation-Fourier-spectroscopy technique to characterize quantum emitters. Performed the technique on a noisy and unstable emitter (perovskite quantum dots) to demonstrate its robustness (manuscript in preparation)",
                                                    "Led collaboration efforts between researchers in different subfields."
                                                ],
                                    "citation":  {
-                                                    "label":  "Daggett, Lange, et al. Nature Reviews Materials",
+                                                    "label":  "Publication: Daggett, Lange, et al. Nature Reviews Materials (2026)",
                                                     "url":  "https://www.nature.com/articles/s41578-026-00893-8"
                                                 }
                                },
@@ -147,13 +147,13 @@
                                    "organization":  "Thesis advisor: Jonathan Hood",
                                    "period":  "2021-2025",
                                    "bullets":  [
-                                                   "First grad student on a new experiment (wore many hats)",
+                                                   "First grad student on a new experiment",
                                                    "Built and automated experimental platform to study cryogenic quantum emitters",
-                                                   "Developed a synthesis method for ultrahigh aspect ratio crystals doped with quantum emitters",
-                                                   "Developed platform for cryogenic molecules coupled to nanophotonic resonators"
+                                                   "Developed platform for cryogenic molecules coupled to nanophotonic resonators",
+                                                   "Developed a synthesis method for ultrahigh aspect ratio crystals doped with quantum emitters"
                                                ],
                                    "citation":  {
-                                                    "label":  "Thesis: Quantum light-matter interactions with organic molecules",
+                                                    "label":  "Thesis: Quantum light-matter interactions with organic molecules (2026)",
                                                     "url":  "https://doi.org/10.25394/PGS.30753941"
                                                 }
                                },
@@ -162,19 +162,27 @@
                                    "organization":  "Thesis advisor: Dr. Tsung-Cheng Shen",
                                    "period":  "2017-2021",
                                    "bullets":  [
-                                                   "Assisted in microfabrication of height-modulated carbon nanotube forests and logged 300+ hours in a university cleanroom.",
-                                                   "Modeled electromagnetic scattering from carbon nanotube forests using analytical and numerical methods."
+                                                   "Assisted in microfabrication of height-modulated carbon nanotube forests.",
+                                                   "Modeled electromagnetic scattering from carbon nanotube forests analytically and numerically."
                                                ],
                                    "citations":  [
                                                      {
-                                                         "label":  "Lange and Shen, Carbon Trends",
+                                                         "label":  "Publication: Lange and Shen, Carbon Trends (2021)",
                                                          "url":  "https://doi.org/10.1016/j.cartre.2021.100070"
                                                      },
                                                      {
-                                                         "label":  "Thesis: The Reflection of Light from Periodic Conducting Interfaces",
+                                                         "label":  "Thesis: The Reflection of Light from Periodic Conducting Interfaces (2021)",
                                                          "url":  "https://doi.org/10.26076/be99-9a13"
                                                      }
                                                  ]
+                               },
+                               {
+                                   "role":  "Microbiology Intern | Mosquito Abatement District Davis",
+                                   "organization":  "",
+                                   "period":  "2018",
+                                   "bullets":  [
+                                                   "Built mosquito traps and used PCR to test mosquito samples for infectious diseases."
+                                               ]
                                }
                            ],
     "education":  [

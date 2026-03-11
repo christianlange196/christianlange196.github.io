@@ -72,7 +72,7 @@
         {% endfor %}
       </p>
       {% if project.link.url and project.link.url != "" %}
-      {% assign projectCitation = project.link.label | replace: "Lange, C. M.", "<span class='author-emphasis'>Lange, C. M.</span>" | replace: "Lange", "<span class='author-emphasis'>Lange</span>" %}
+      {% assign projectCitation = project.link.label | replace: "Thesis:", "<strong>Thesis:</strong>" | replace: "Lange, C. M.", "<span class='author-emphasis'>Lange, C. M.</span>" | replace: "Lange", "<span class='author-emphasis'>Lange</span>" %}
       <p class="artifact-link"><a class="citation-btn" href="{{ project.link.url }}" target="_blank" rel="noopener noreferrer">{{ projectCitation }}</a></p>
       {% endif %}
       {% if project.patentNote %}
@@ -103,17 +103,19 @@
       </ul>
       {% if role.citations %}
       {% for ref in role.citations %}
-      {% assign roleCitation = ref.label | replace: "Lange, C. M.", "<span class='author-emphasis'>Lange, C. M.</span>" | replace: "Lange", "<span class='author-emphasis'>Lange</span>" %}
+      {% assign roleCitation = ref.label | replace: "Thesis:", "<strong>Thesis:</strong>" | replace: "Lange, C. M.", "<span class='author-emphasis'>Lange, C. M.</span>" | replace: "Lange", "<span class='author-emphasis'>Lange</span>" %}
       <p class="artifact-link"><a class="citation-btn" href="{{ ref.url }}" target="_blank" rel="noopener noreferrer">{{ roleCitation }}</a></p>
       {% endfor %}
       {% elsif role.citation and role.citation.url %}
-      {% assign roleCitation = role.citation.label | replace: "Lange, C. M.", "<span class='author-emphasis'>Lange, C. M.</span>" | replace: "Lange", "<span class='author-emphasis'>Lange</span>" %}
+      {% assign roleCitation = role.citation.label | replace: "Thesis:", "<strong>Thesis:</strong>" | replace: "Lange, C. M.", "<span class='author-emphasis'>Lange, C. M.</span>" | replace: "Lange", "<span class='author-emphasis'>Lange</span>" %}
       <p class="artifact-link"><a class="citation-btn" href="{{ role.citation.url }}" target="_blank" rel="noopener noreferrer">{{ roleCitation }}</a></p>
       {% endif %}
     </article>
     {% endfor %}
   </div>
 </section>
+
+
 
 
 

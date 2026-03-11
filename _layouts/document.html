@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -6,11 +6,27 @@
     <title>{{ title }} | {{ site.title }}</title>
     <meta name="description" content="{{ description | default: site.description }}">
     <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
     <link rel="stylesheet" href="/assets/css/career-docs.css">
   </head>
   <body class="doc-page doc-{{ docVariant }}">
     <main class="doc-shell">
       {% render "career-doc-content.html", doc: careerDocs, variant: docVariant, pageTitle: title %}
     </main>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (window.renderMathInElement) {
+          window.renderMathInElement(document.body, {
+            delimiters: [
+              { left: "\\(", right: "\\)", display: false },
+              { left: "$", right: "$", display: false }
+            ],
+            throwOnError: false
+          });
+        }
+      });
+    </script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --paper: #ffffff;
   --ink: #111827;
   --ink-soft: #334155;
@@ -315,6 +315,12 @@ li + li {
   gap: 0.34rem;
 }
 
+.doc-resume .experience-stack .role-block,
+.doc-resume .experience-stack .section-block-keep {
+  break-inside: auto;
+  page-break-inside: auto;
+}
+
 .doc-resume .pub-list-compact {
   gap: 0.24rem;
 }
@@ -419,6 +425,7 @@ li + li {
   page-break-after: avoid;
   break-after: avoid-page;
 }
+
 
 
 
