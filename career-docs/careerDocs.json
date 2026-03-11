@@ -1,6 +1,6 @@
 ﻿{
     "identity":  {
-                     "name":  "Christian M Lange",
+                     "name":  "Christian M Lange, PhD",
                      "targetRole":  "",
                      "location":  "West Lafayette, IN",
                      "email":  "christianlange196@gmail.com",
@@ -143,7 +143,7 @@
                                                 }
                                },
                                {
-                                   "role":  "PhD Researcher | Purdue University",
+                                   "role":  "PhD in Physics | Purdue University",
                                    "organization":  "Thesis advisor: Jonathan Hood",
                                    "period":  "2021-2025",
                                    "bullets":  [
@@ -158,9 +158,9 @@
                                                 }
                                },
                                {
-                                   "role":  "Undergraduate Researcher | Utah State University",
-                                   "organization":  "Thesis advisor: Dr. Tsung-Cheng Shen",
-                                   "period":  "2017-2021",
+                                   "role":  "BS in Physics (Minors: Mathematics, Computer Science) | Utah State University",
+                                   "organization":  "Undergraduate research advisor: Dr. Tsung-Cheng Shen",
+                                   "period":  "2017-2021, Summa Cum Laude, GPA 3.99/4.00",
                                    "bullets":  [
                                                    "Assisted in microfabrication of height-modulated carbon nanotube forests.",
                                                    "Modeled electromagnetic scattering from carbon nanotube forests analytically and numerically."
