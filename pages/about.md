@@ -1,11 +1,8 @@
 ﻿---
-layout: page.html
+layout: default.html
 title: About
-description: Summary, resume/CV links, and contact information for Christian M Lange.
 permalink: /about/
 ---
-## Christian M Lange
-
 I am an experimental physicist specializing in quantum optics and nanophotonics, with a focus on building complete experimental systems from concept to publication.
 
 <p class="button-row">
@@ -38,5 +35,3 @@ Postdoctoral Researcher at Purdue University (Quantum Photonic Integrated Design
 ## Selected Publications
 - Lange, C. M., E. Daggett, V. Walther, L. Huang, and J. D. Hood, "Superradiant and subradiant states of lifetime-limited organic molecules through laser-induced tuning," *Nature Physics* 20, 836-842 (2024). DOI: [10.1038/s41567-024-02404-4](https://doi.org/10.1038/s41567-024-02404-4)
 - Lange, C. M. et al., "Cavity qed with molecular defects coupled to a photonic crystal cavity," Under review; submitted to *ACS Nano*. DOI: [10.48550/arXiv.2506.01917](https://doi.org/10.48550/arXiv.2506.01917)
-
-
