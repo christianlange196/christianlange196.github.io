@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find C:UserschrisGitHubchristianlange196.github.io -type f -name *resume* -o -name *cv*)",
+      "Bash(ls -lh *.pdf)",
+      "Bash(npm install:*)",
+      "Bash(npx eleventy:*)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(where npm:*)",
+      "Bash(node -e \":*)"
+    ]
+  }
+}

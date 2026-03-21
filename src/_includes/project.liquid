@@ -1,0 +1,36 @@
+---
+layout: base.liquid
+useKatex: true
+---
+<article class="project-detail">
+  <header class="project-header">
+    <p class="eyebrow">Project</p>
+    <h1>{{ title }}</h1>
+    <p class="meta">{{ date | dateFormat }}</p>
+    {% if tags_display %}
+    <div class="tag-list">
+      {% for tag in tags_display %}
+      <span class="tag-pill">{{ tag }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+    <div class="project-links">
+      {% if publication_url %}
+      <a href="{{ publication_url }}" class="btn btn-primary" target="_blank" rel="noopener">{{ publication_label | default: "Publication" }}</a>
+      {% endif %}
+      {% if github_url and github_url != "" %}
+      <a href="{{ github_url }}" class="btn btn-secondary" target="_blank" rel="noopener">GitHub</a>
+      {% endif %}
+    </div>
+  </header>
+
+  {% if featured_image %}
+  <figure class="project-featured-image">
+    <img src="{{ featured_image }}" alt="{{ title }}" loading="lazy">
+  </figure>
+  {% endif %}
+
+  <div class="prose">
+    {{ content }}
+  </div>
+</article>
