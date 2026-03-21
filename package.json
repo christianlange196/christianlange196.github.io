@@ -4,12 +4,12 @@
   "private": true,
   "description": "Personal portfolio website built with Eleventy",
   "scripts": {
-    "dev": "eleventy --serve --watch --port=8090",
+    "dev": "eleventy --serve --watch --port=8091",
     "build": "eleventy"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
-    "markdown-it": "^14.0.0",
-    "markdown-it-katex": "^2.0.3"
+    "@traptitech/markdown-it-katex": "^3.6.0",
+    "markdown-it": "^14.0.0"
   }
 }

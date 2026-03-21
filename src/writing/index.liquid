@@ -4,19 +4,26 @@ title: Writing
 permalink: /writing/
 ---
 {% if collections.writing.size > 0 %}
-<div class="essay-list">
+<div class="essay-grid">
   {% for essay in collections.writing %}
-  <div class="essay-item">
-    <h3 class="essay-item-title">
-      <a href="{{ essay.url }}">{{ essay.data.title }}</a>
-    </h3>
-    <p class="essay-item-meta">
+  <article class="essay-card">
+    <p class="essay-card-meta">
       {{ essay.data.date | dateFormat }}{% if essay.data.reading_time %} &middot; {{ essay.data.reading_time }} min read{% endif %}
     </p>
+    <h3 class="essay-card-title">
+      <a class="essay-card-link" href="{{ essay.url }}">{{ essay.data.title }}</a>
+    </h3>
     {% if essay.data.excerpt %}
-    <p class="essay-item-excerpt">{{ essay.data.excerpt }}</p>
+    <p class="essay-card-excerpt">{{ essay.data.excerpt }}</p>
     {% endif %}
-  </div>
+    {% if essay.data.tags_display %}
+    <div class="tag-list">
+      {% for tag in essay.data.tags_display %}
+      <span class="tag-pill">{{ tag }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </article>
   {% endfor %}
 </div>
 {% else %}

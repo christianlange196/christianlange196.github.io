@@ -1,11 +1,6 @@
 <header class="site-header">
   <nav class="nav-container">
     <a href="/" class="nav-brand">Christian M. Lange</a>
-    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-      <span class="nav-toggle-bar"></span>
-      <span class="nav-toggle-bar"></span>
-      <span class="nav-toggle-bar"></span>
-    </button>
     <ul class="nav-links">
       <li><a href="/" {% if page.url == "/" %}aria-current="page"{% endif %}>Home</a></li>
       <li><a href="/projects/" {% if page.url contains "/projects" %}aria-current="page"{% endif %}>Projects</a></li>

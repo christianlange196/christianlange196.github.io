@@ -9,14 +9,12 @@ permalink: /projects/
   <div class="project-card">
     {% if project.data.featured_image %}
     <div class="project-card-image">
-      <a href="{{ project.url }}">
-        <img src="{{ project.data.featured_image }}" alt="{{ project.data.title }}" loading="lazy">
-      </a>
+      <img src="{{ project.data.featured_image }}" alt="{{ project.data.title }}" loading="lazy">
     </div>
     {% endif %}
     <div class="project-card-body">
       <h3 class="project-card-title">
-        <a href="{{ project.url }}">{{ project.data.title }}</a>
+        <a class="project-card-link" href="{{ project.url }}">{{ project.data.title }}</a>
       </h3>
       <p class="project-card-excerpt">{{ project.data.excerpt }}</p>
       {% if project.data.tags_display %}
@@ -26,12 +24,12 @@ permalink: /projects/
         {% endfor %}
       </div>
       {% endif %}
-      <div class="project-card-links">
+      <div class="project-card-pills">
         {% if project.data.publication_url %}
-        <a href="{{ project.data.publication_url }}" target="_blank" rel="noopener">{{ project.data.publication_label | default: "Publication" }}</a>
+        <a class="project-pub-pill" href="{{ project.data.publication_url }}" target="_blank" rel="noopener">{{ project.data.publication_label | default: "Publication" }}</a>
         {% endif %}
         {% if project.data.github_url and project.data.github_url != "" %}
-        <a href="{{ project.data.github_url }}" target="_blank" rel="noopener">GitHub</a>
+        <a class="project-pub-pill" href="{{ project.data.github_url }}" target="_blank" rel="noopener">GitHub</a>
         {% endif %}
       </div>
     </div>
