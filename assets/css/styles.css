@@ -248,6 +248,48 @@ button:focus-visible {
   background: #eef0f1;
 }
 
+.contact-cards {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1.25rem;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.85rem 1.4rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  color: var(--text);
+  background: var(--surface);
+  transition: border-color 0.15s, background 0.15s;
+  min-width: 5rem;
+}
+
+.contact-card:hover {
+  border-color: var(--accent);
+  background: #e9f2f6;
+  color: var(--text);
+}
+
+.contact-icon {
+  width: 1.3rem;
+  height: 1.3rem;
+  color: var(--text-soft);
+}
+
+.contact-card-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-soft);
+  white-space: nowrap;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: 1fr;
