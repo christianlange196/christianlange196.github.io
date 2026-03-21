@@ -1,0 +1,41 @@
+---
+layout: page.liquid
+title: Projects
+permalink: /projects/
+---
+{% if collections.projects.size > 0 %}
+<div class="project-grid">
+  {% for project in collections.projects %}
+  <div class="project-card">
+    {% if project.data.featured_image %}
+    <div class="project-card-image">
+      <img src="{{ project.data.featured_image }}" alt="{{ project.data.title }}" loading="lazy">
+    </div>
+    {% endif %}
+    <div class="project-card-body">
+      <h3 class="project-card-title">
+        <a class="project-card-link" href="{{ project.url }}">{{ project.data.title }}</a>
+      </h3>
+      <p class="project-card-excerpt">{{ project.data.excerpt }}</p>
+      {% if project.data.tags_display %}
+      <div class="tag-list">
+        {% for tag in project.data.tags_display %}
+        <span class="tag-pill">{{ tag }}</span>
+        {% endfor %}
+      </div>
+      {% endif %}
+      <div class="project-card-pills">
+        {% if project.data.publication_url %}
+        <a class="project-pub-pill" href="{{ project.data.publication_url }}" target="_blank" rel="noopener">{{ project.data.publication_label | default: "Publication" }}</a>
+        {% endif %}
+        {% if project.data.github_url and project.data.github_url != "" %}
+        <a class="project-pub-pill" href="{{ project.data.github_url }}" target="_blank" rel="noopener">GitHub</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% else %}
+<p class="empty-state">Projects coming soon.</p>
+{% endif %}

@@ -1,0 +1,21 @@
+---
+layout: base.liquid
+---
+<article class="essay-detail">
+  <header class="essay-header">
+    <p class="eyebrow">Essay</p>
+    <h1>{{ title }}</h1>
+    <p class="meta">{{ date | dateFormat }}{% if reading_time %} &middot; {{ reading_time }} min read{% endif %}</p>
+    {% if tags_display %}
+    <div class="tag-list">
+      {% for tag in tags_display %}
+      <span class="tag-pill">{{ tag }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </header>
+
+  <div class="prose">
+    {{ content }}
+  </div>
+</article>
