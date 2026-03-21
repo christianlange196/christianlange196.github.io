@@ -1,0 +1,11 @@
+---
+layout: base.liquid
+---
+<article class="page-content">
+  {% if title and page.url != "/" %}
+  <header class="page-header">
+    <h1>{{ title }}</h1>
+  </header>
+  {% endif %}
+  {{ content }}
+</article>

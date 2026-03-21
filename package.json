@@ -1,19 +1,15 @@
 {
-    "name":  "personal-site-eleventy",
-    "version":  "1.0.0",
-    "private":  true,
-    "description":  "Personal portfolio/docs website built with Eleventy",
-    "scripts":  {
-                    "dev":  "npm run docs:sync \u0026\u0026 eleventy --serve --watch",
-                    "build":  "npm run docs:sync \u0026\u0026 eleventy",
-                    "docs:sync":  "node career-docs/sync.mjs",
-                    "pdf:resume":  "node career-docs/export-pdf.mjs resume",
-                    "pdf:cv":  "node career-docs/export-pdf.mjs cv",
-                    "pdf:all":  "node career-docs/export-pdf.mjs all"
-                },
-    "devDependencies":  {
-                            "@11ty/eleventy":  "^3.0.0",
-                            "playwright":  "^1.52.0"
-                        }
+  "name": "personal-site-eleventy",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Personal portfolio website built with Eleventy",
+  "scripts": {
+    "dev": "eleventy --serve --watch --port=8090",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "markdown-it": "^14.0.0",
+    "markdown-it-katex": "^2.0.3"
+  }
 }
-

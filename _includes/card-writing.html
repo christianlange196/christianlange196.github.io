@@ -1,9 +1,0 @@
-<article class="project-card">
-  <h3><a href="{{ entry.url }}">{{ entry.data.title }}</a></h3>
-  <p>{{ entry.data.excerpt }}</p>
-  <p class="meta-row">
-    <span class="meta-pill">{{ entry.date | date: "%b %d, %Y" }}</span>
-    {% if entry.data.reading_time %}<span class="meta-pill">{{ entry.data.reading_time }} min read</span>{% endif %}
-  </p>
-  <p class="project-links"><a href="{{ entry.url }}">Read Essay</a></p>
-</article>

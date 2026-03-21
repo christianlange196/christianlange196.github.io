@@ -1,0 +1,24 @@
+---
+layout: page.liquid
+title: Writing
+permalink: /writing/
+---
+{% if collections.writing.size > 0 %}
+<div class="essay-list">
+  {% for essay in collections.writing %}
+  <div class="essay-item">
+    <h3 class="essay-item-title">
+      <a href="{{ essay.url }}">{{ essay.data.title }}</a>
+    </h3>
+    <p class="essay-item-meta">
+      {{ essay.data.date | dateFormat }}{% if essay.data.reading_time %} &middot; {{ essay.data.reading_time }} min read{% endif %}
+    </p>
+    {% if essay.data.excerpt %}
+    <p class="essay-item-excerpt">{{ essay.data.excerpt }}</p>
+    {% endif %}
+  </div>
+  {% endfor %}
+</div>
+{% else %}
+<p class="empty-state">Essays coming soon.</p>
+{% endif %}

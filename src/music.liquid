@@ -1,0 +1,28 @@
+---
+layout: page.liquid
+title: Music
+permalink: /music/
+---
+{% if music.size > 0 %}
+<div class="video-list">
+  {% for video in music %}
+  <div class="video-item">
+    <h3>{{ video.title }}</h3>
+    <div class="video-embed">
+      <iframe
+        src="https://www.youtube-nocookie.com/embed/{{ video.id }}"
+        title="{{ video.title }}"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        loading="lazy">
+      </iframe>
+    </div>
+    {% if video.description != "" %}
+    <p class="video-description">{{ video.description }}</p>
+    {% endif %}
+  </div>
+  {% endfor %}
+</div>
+{% else %}
+<p class="empty-state">Music coming soon.</p>
+{% endif %}
