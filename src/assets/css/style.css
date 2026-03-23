@@ -771,6 +771,22 @@ p {
   text-align: center;
 }
 
+.sheet-music-card {
+  min-height: 7rem;
+}
+
+.sheet-music-card-body {
+  padding: 1rem 1.25rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.sheet-music-card-body .project-card-title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /* ============================================
    Empty State
    ============================================ */

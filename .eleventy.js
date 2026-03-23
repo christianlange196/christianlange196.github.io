@@ -10,6 +10,7 @@ module.exports = function (eleventyConfig) {
   // Passthrough copy
   eleventyConfig.addPassthroughCopy({ "resume.pdf": "resume.pdf" });
   eleventyConfig.addPassthroughCopy({ "cv.pdf": "cv.pdf" });
+  eleventyConfig.addPassthroughCopy({ "the-birthday-doxology.pdf": "the-birthday-doxology.pdf" });
   eleventyConfig.addPassthroughCopy("src/assets");
 
   // Images co-located with writing & project folders (Obsidian-style)
