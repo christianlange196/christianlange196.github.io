@@ -1,0 +1,166 @@
+/* ============================================
+   Nanoscribe Aligned-Write Tool
+   ============================================ */
+.ns-app { width: 100%; }
+
+.ns-header { margin-bottom: 2rem; }
+.ns-header h1 { margin-bottom: 0.5rem; }
+
+.card-panel {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.4rem 1.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+/* Settings */
+.ns-settings {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.ns-field { display: flex; flex-direction: column; gap: 0.35rem; }
+
+.ns-field label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-soft);
+}
+
+.ns-unit { color: var(--text-muted); font-weight: 500; font-size: 0.78rem; }
+
+.ns-field input[type="number"] {
+  width: 100%;
+  padding: 0.5rem 0.65rem;
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+}
+
+.ns-field input[type="number"]:focus { outline: none; border-color: var(--accent); }
+
+.ns-hint { font-size: 0.74rem; color: var(--text-muted); line-height: 1.45; margin: 0; }
+.ns-hint-inline { color: var(--text-muted); font-weight: 400; font-size: 0.74rem; }
+
+.ns-label-block { margin-bottom: 0.15rem; }
+.ns-field-checks { gap: 0.4rem; }
+.ns-check {
+  display: flex; align-items: center; gap: 0.5rem;
+  font-size: 0.85rem; font-weight: 500; color: var(--text-soft); cursor: pointer;
+}
+.ns-check input { accent-color: var(--accent); width: 1rem; height: 1rem; }
+
+.ns-slider { display: flex; flex-direction: column; gap: 0.35rem; font-size: 0.85rem; font-weight: 600; color: var(--text-soft); }
+.ns-slider input[type="range"] { width: 100%; accent-color: var(--accent); }
+
+/* Panels */
+.ns-panels {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 900px) {
+  .ns-panels { grid-template-columns: 1fr 1fr; }
+}
+
+.ns-panel { display: flex; flex-direction: column; gap: 1rem; }
+
+.ns-panel-head { display: flex; align-items: center; gap: 0.75rem; }
+.ns-panel-head h2 { margin: 0; font-size: 1.3rem; }
+
+.ns-badge {
+  font-size: 0.7rem; font-weight: 600; letter-spacing: 0.03em; text-transform: uppercase;
+  padding: 0.2rem 0.6rem; border-radius: 999px;
+}
+.ns-badge-cal { background: var(--accent-soft); color: var(--accent); }
+.ns-badge-tgt { background: color-mix(in srgb, #e0703a 18%, transparent); color: #c85a26; }
+[data-theme="dark"] .ns-badge-tgt { color: #ff9d6b; }
+
+/* Dropzone / canvas stage */
+.ns-dropzone {
+  position: relative;
+  border: 2px dashed var(--border-strong);
+  border-radius: var(--radius);
+  background: var(--surface);
+  height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+.ns-dropzone.ns-has-image { cursor: crosshair; border-style: solid; border-color: var(--border); background: #000; }
+.ns-dropzone.ns-dragover { border-color: var(--accent); background: var(--accent-soft); }
+.ns-dropzone.ns-addmode { border-color: var(--accent); box-shadow: inset 0 0 0 2px var(--accent); }
+
+.ns-dropzone-empty {
+  text-align: center; padding: 2rem; color: var(--text-muted); pointer-events: none;
+  display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
+}
+.ns-dropzone-empty svg { width: 2.5rem; height: 2.5rem; color: var(--text-muted); margin-bottom: 0.25rem; }
+.ns-dropzone-empty p { margin: 0; font-size: 0.9rem; }
+.ns-dropzone-empty strong { color: var(--text-soft); }
+
+.ns-canvas { position: absolute; top: 0; left: 0; display: block; touch-action: none; }
+
+/* Panel tools */
+.ns-panel-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; }
+.ns-panel-tools .btn { padding: 0.4rem 0.85rem; font-size: 0.8rem; }
+.ns-btn-addmode[aria-pressed="true"] {
+  background: var(--accent); color: var(--accent-contrast); border-color: var(--accent);
+}
+.ns-tool-hint { font-size: 0.76rem; color: var(--text-muted); flex-basis: 100%; }
+
+/* Metrics */
+.ns-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem 1rem;
+  margin: 0;
+  padding-top: 0.25rem;
+  border-top: 1px solid var(--border);
+}
+.ns-metrics > div { display: flex; flex-direction: column; gap: 0.1rem; }
+.ns-metrics dt { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); }
+.ns-metrics dd { margin: 0; font-family: var(--font-mono); font-size: 0.92rem; color: var(--text); }
+
+/* Result */
+.ns-result { margin-bottom: 1.5rem; }
+.ns-result h2 { margin-top: 0; font-size: 1.3rem; }
+.ns-result-empty { color: var(--text-muted); margin: 0; }
+
+.ns-result-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.ns-result-stat {
+  display: flex; flex-direction: column; gap: 0.2rem;
+  padding: 1rem 1.1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+.ns-result-primary { background: var(--accent-soft); border-color: color-mix(in srgb, var(--accent) 30%, transparent); }
+.ns-result-label { font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); }
+.ns-result-value { font-family: var(--font-mono); font-size: 1.35rem; font-weight: 600; color: var(--text); line-height: 1.2; }
+.ns-result-primary .ns-result-value { color: var(--accent); }
+.ns-result-sub { font-size: 0.76rem; color: var(--text-muted); }
+.ns-result-note { font-size: 0.85rem; color: var(--text-muted); margin: 0; }
+
+/* About */
+.ns-about { margin-bottom: 1.5rem; }
+.ns-about summary { cursor: pointer; font-weight: 600; font-family: var(--font-serif); font-size: 1.05rem; }
+.ns-about[open] summary { margin-bottom: 1rem; }
+.ns-about .prose { font-size: 0.98rem; }
+.ns-about ol { padding-left: 1.25rem; }
+.ns-about li { margin-bottom: 0.5rem; }

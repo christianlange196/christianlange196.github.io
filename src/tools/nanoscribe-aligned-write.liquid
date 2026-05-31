@@ -1,0 +1,153 @@
+---
+layout: base.liquid
+title: Nanoscribe Aligned-Write Calculator
+description: Sub-pixel alignment-mark detection and write-offset calculator for the Nanoscribe GT2.
+permalink: /tools/nanoscribe-aligned-write/
+wide: true
+body_class: tool-page
+extra_css: /assets/css/nanoscribe.css
+extra_js: /assets/js/nanoscribe.js
+---
+<article class="ns-app">
+  <header class="ns-header">
+    <p class="eyebrow">Tool</p>
+    <h1>Aligned-Write Calculator</h1>
+  </header>
+
+  <!-- Image panels -->
+  <div class="ns-panels">
+    <section class="ns-panel card-panel" data-side="cal">
+      <div class="ns-panel-head">
+        <h2>Calibration</h2>
+        <span class="ns-badge ns-badge-cal">printer origin</span>
+      </div>
+      <div class="ns-dropzone" data-side="cal" tabindex="0" role="button" aria-label="Load calibration image">
+        <input type="file" class="ns-file" data-side="cal" accept="image/*" hidden>
+        <div class="ns-dropzone-empty">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 16V4M12 4l-4 4M12 4l4 4"/><path d="M4 16v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/>
+          </svg>
+          <p><strong>Drop image</strong> or click to browse</p>
+          <p class="ns-hint">Camera image of the alignment marks the Nanoscribe wrote.</p>
+        </div>
+        <canvas class="ns-canvas" data-side="cal" hidden></canvas>
+      </div>
+      <div class="ns-panel-tools" hidden data-side="cal">
+        <button class="btn btn-secondary ns-btn-redetect" data-side="cal" type="button">Re-detect</button>
+        <button class="btn btn-secondary ns-btn-addmode" data-side="cal" type="button" aria-pressed="false">Add mark</button>
+        <button class="btn btn-secondary ns-btn-clear" data-side="cal" type="button">Clear marks</button>
+        <span class="ns-tool-hint">Click a mark to select, then click its true location to lock it.</span>
+      </div>
+      <dl class="ns-metrics" data-side="cal">
+        <div><dt>Marks</dt><dd data-k="count">—</dd></div>
+        <div><dt>Centre (px)</dt><dd data-k="center">—</dd></div>
+        <div><dt>Rotation</dt><dd data-k="rot">—</dd></div>
+        <div><dt>Spacing (px)</dt><dd data-k="spacing">—</dd></div>
+      </dl>
+    </section>
+
+    <section class="ns-panel card-panel" data-side="tgt">
+      <div class="ns-panel-head">
+        <h2>Target</h2>
+        <span class="ns-badge ns-badge-tgt">sample marks</span>
+      </div>
+      <div class="ns-dropzone" data-side="tgt" tabindex="0" role="button" aria-label="Load target image">
+        <input type="file" class="ns-file" data-side="tgt" accept="image/*" hidden>
+        <div class="ns-dropzone-empty">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 16V4M12 4l-4 4M12 4l4 4"/><path d="M4 16v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/>
+          </svg>
+          <p><strong>Drop image</strong> or click to browse</p>
+          <p class="ns-hint">Camera image of the marks on the sample to be printed.</p>
+        </div>
+        <canvas class="ns-canvas" data-side="tgt" hidden></canvas>
+      </div>
+      <div class="ns-panel-tools" hidden data-side="tgt">
+        <button class="btn btn-secondary ns-btn-redetect" data-side="tgt" type="button">Re-detect</button>
+        <button class="btn btn-secondary ns-btn-addmode" data-side="tgt" type="button" aria-pressed="false">Add mark</button>
+        <button class="btn btn-secondary ns-btn-clear" data-side="tgt" type="button">Clear marks</button>
+        <span class="ns-tool-hint">Click a mark to select, then click its true location to lock it.</span>
+      </div>
+      <dl class="ns-metrics" data-side="tgt">
+        <div><dt>Marks</dt><dd data-k="count">—</dd></div>
+        <div><dt>Centre (px)</dt><dd data-k="center">—</dd></div>
+        <div><dt>Rotation</dt><dd data-k="rot">—</dd></div>
+        <div><dt>Spacing (px)</dt><dd data-k="spacing">—</dd></div>
+      </dl>
+    </section>
+  </div>
+
+  <!-- Result / transformation -->
+  <section class="ns-result card-panel" aria-live="polite">
+    <h2>Write transformation</h2>
+    <p class="ns-result-empty" id="ns-result-empty">Load both images to compute the transformation.</p>
+    <div class="ns-result-body" id="ns-result-body" hidden>
+      <div class="ns-result-grid">
+        <div class="ns-result-stat ns-result-primary">
+          <span class="ns-result-label">Shift stage by</span>
+          <span class="ns-result-value" id="ns-out-shift">—</span>
+          <span class="ns-result-sub">µm (X, Y)</span>
+        </div>
+        <div class="ns-result-stat">
+          <span class="ns-result-label">Rotate pattern by</span>
+          <span class="ns-result-value" id="ns-out-rot">—</span>
+          <span class="ns-result-sub">degrees</span>
+        </div>
+        <div class="ns-result-stat">
+          <span class="ns-result-label">Pixel offset</span>
+          <span class="ns-result-value" id="ns-out-px">—</span>
+          <span class="ns-result-sub">camera px (Δx, Δy)</span>
+        </div>
+        <div class="ns-result-stat">
+          <span class="ns-result-label">Distance</span>
+          <span class="ns-result-value" id="ns-out-dist">—</span>
+          <span class="ns-result-sub">µm from current write point</span>
+        </div>
+      </div>
+      <p class="ns-result-note" id="ns-result-note"></p>
+    </div>
+  </section>
+
+  <!-- Settings -->
+  <section class="ns-settings card-panel" aria-label="Settings">
+    <div class="ns-field">
+      <label for="ns-pitch">Mark pitch <span class="ns-unit">µm</span></label>
+      <input type="number" id="ns-pitch" value="100" step="any" min="0">
+      <p class="ns-hint">Designed centre-to-centre spacing of neighbouring marks.</p>
+    </div>
+    <div class="ns-field">
+      <label for="ns-scale">Scale <span class="ns-unit">px / µm</span></label>
+      <input type="number" id="ns-scale" value="1" step="any" min="0">
+      <p class="ns-hint">Auto-derived from the calibration marks &amp; pitch. Override if known.</p>
+    </div>
+    <div class="ns-field">
+      <label for="ns-marklen">Mark size <span class="ns-unit">px</span></label>
+      <input type="number" id="ns-marklen" value="40" step="any" min="4">
+      <p class="ns-hint">Side length of a square mark. All four sides are sampled one
+        cross-section per pixel (green dots = sampled edge points, orange = fitted side).</p>
+    </div>
+    <div class="ns-field">
+      <label for="ns-offx">Target offset X <span class="ns-unit">µm</span></label>
+      <input type="number" id="ns-offx" value="0" step="any">
+      <p class="ns-hint">Where you want the print centre, relative to the mark centre.</p>
+    </div>
+    <div class="ns-field">
+      <label for="ns-offy">Target offset Y <span class="ns-unit">µm</span></label>
+      <input type="number" id="ns-offy" value="0" step="any">
+      <p class="ns-hint">Y in the mark frame (after rotation).</p>
+    </div>
+    <div class="ns-field ns-field-checks">
+      <label class="ns-label-block">Stage axis convention</label>
+      <label class="ns-check"><input type="checkbox" id="ns-invx"> Invert X</label>
+      <label class="ns-check"><input type="checkbox" id="ns-invy" checked> Invert Y <span class="ns-hint-inline">(image Y points down)</span></label>
+      <label class="ns-check"><input type="checkbox" id="ns-swap"> Swap X &harr; Y</label>
+    </div>
+    <div class="ns-field ns-field-checks">
+      <label class="ns-label-block">Detection</label>
+      <label class="ns-slider">Sensitivity
+        <input type="range" id="ns-sens" min="2" max="40" value="12">
+      </label>
+      <p class="ns-hint">Higher = more candidate marks. Re-run after changing.</p>
+    </div>
+  </section>
+</article>

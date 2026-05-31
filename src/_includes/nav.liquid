@@ -1,11 +1,21 @@
 <header class="site-header">
-  <nav class="nav-container">
-    <a href="/" class="nav-brand">Christian M. Lange</a>
+  <nav class="nav-container" aria-label="Primary">
+    <a href="/" class="nav-brand">Christian&nbsp;M.&nbsp;Lange</a>
     <ul class="nav-links">
       <li><a href="/" {% if page.url == "/" %}aria-current="page"{% endif %}>Home</a></li>
       <li><a href="/projects/" {% if page.url contains "/projects" %}aria-current="page"{% endif %}>Projects</a></li>
       <li><a href="/writing/" {% if page.url contains "/writing" %}aria-current="page"{% endif %}>Writing</a></li>
-      <li><a href="/music/" {% if page.url == "/music/" %}aria-current="page"{% endif %}>Music</a></li>
+      <li><a href="/tools/" {% if page.url contains "/tools" %}aria-current="page"{% endif %}>Tools</a></li>
+      <li><a href="/music/" {% if page.url contains "/music" %}aria-current="page"{% endif %}>Music</a></li>
     </ul>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme" title="Toggle color theme">
+      <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="4"/>
+        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+      </svg>
+      <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+      </svg>
+    </button>
   </nav>
 </header>
